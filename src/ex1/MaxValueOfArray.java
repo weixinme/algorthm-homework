@@ -18,6 +18,6 @@ public class MaxValueOfArray {
     public static void main(String[] args) {
         int[] x = {23, 35, 234, 645, 34, 54, 7, 3782};
         int max = findMaxValue(x, 0, x.length-1);
-        System.out.print("Max value in " + Arrays.toString(x) + " is " + max + ".");
+        System.out.print("数组 " + Arrays.toString(x) + " 中的最大值为 " + max + ".");
     }
 }

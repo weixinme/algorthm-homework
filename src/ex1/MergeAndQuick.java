@@ -82,14 +82,14 @@ public class MergeAndQuick {
         endTime = System.currentTimeMillis();
         quickTime = (endTime - startTime);
 //        System.out.println("After quick sort: \n" + Arrays.toString(a));
-        System.out.println("Quick sort run time is " + quickTime + " ms");
+        System.out.println("快速排序运行时间为 " + quickTime + " ms");
 
         startTime = System.currentTimeMillis();
         mergeSort(b, 0, a.length - 1);
         endTime = System.currentTimeMillis();
         mergeTime = (endTime - startTime);
 //        System.out.println("After merge sort: \n" + Arrays.toString(b));
-        System.out.println("Merge sort run time is " + mergeTime + " ms");
+        System.out.println("归并排序运行时间为 " + mergeTime + " ms");
     }
 
 }

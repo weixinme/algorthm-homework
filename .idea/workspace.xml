@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4d459d9-7e94-4ee5-8a07-62ff2e00fac9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex2/AssemblyLineScheduling.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorthm-experiment/ex1/BuildMaxHeap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorthm-experiment/ex1/BuildMaxHeap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorthm-experiment/ex1/MaxSubarray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorthm-experiment/ex1/MaxSubarray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorthm-experiment/ex1/MaxValueOfArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorthm-experiment/ex1/MaxValueOfArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorthm-experiment/ex1/MergeAndQuick.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorthm-experiment/ex1/MergeAndQuick.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorthm-experiment/ex2/AssemblyLineScheduling.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorthm-experiment/ex2/AssemblyLineScheduling.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorthm-experiment/ex2/MinTimeContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex1/BuildMaxHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex1/BuildMaxHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex1/MaxSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex1/MaxSubarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex1/MaxValueOfArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex1/MaxValueOfArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex1/MergeAndQuick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex1/MergeAndQuick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex2/AssemblyLineScheduling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex2/AssemblyLineScheduling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex2/MatrixChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex2/MatrixChain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex2/MultistageGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex2/MultistageGraph.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ex1/MaxValueOfArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="20" column="84" selection-start-line="20" selection-start-column="84" selection-end-line="20" selection-end-column="84" />
+            <state relative-caret-position="184">
+              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -30,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ex1/BuildMaxHeap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="943">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="243">
+              <caret line="46" column="51" lean-forward="true" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -39,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ex1/MergeAndQuick.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1472">
-              <caret line="65" column="37" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="37" />
+            <state relative-caret-position="565">
+              <caret line="88" column="45" lean-forward="true" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,17 +62,42 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ex1/MaxSubarray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="83" column="122" selection-start-line="83" selection-start-column="71" selection-end-line="83" selection-end-column="122" />
+            <state relative-caret-position="404">
+              <caret line="88" column="53" selection-start-line="88" selection-start-column="53" selection-end-line="88" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ex2/AssemblyLineScheduling.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            <state relative-caret-position="220">
+              <caret line="65" column="13" lean-forward="true" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ex2/MatrixChain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ex2/MultistageGraph.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1334">
+              <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+              <folding>
+                <element signature="e#1993#1994#0" expanded="true" />
+                <element signature="e#2021#2022#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,12 +128,14 @@
       <list>
         <option value="$PROJECT_DIR$/src/ex1/HeapSort.java" />
         <option value="$PROJECT_DIR$/src/ex1/ArrayUtils.java" />
+        <option value="$PROJECT_DIR$/src/ex2/Main.java" />
+        <option value="$PROJECT_DIR$/src/ex2/MultistageGraph.java" />
+        <option value="$PROJECT_DIR$/src/ex2/MatrixChain.java" />
+        <option value="$PROJECT_DIR$/src/ex1/MaxSubarray.java" />
+        <option value="$PROJECT_DIR$/src/ex2/AssemblyLineScheduling.java" />
+        <option value="$PROJECT_DIR$/src/ex1/MergeAndQuick.java" />
         <option value="$PROJECT_DIR$/src/ex1/BuildMaxHeap.java" />
         <option value="$PROJECT_DIR$/src/ex1/MaxValueOfArray.java" />
-        <option value="$PROJECT_DIR$/src/ex1/MergeAndQuick.java" />
-        <option value="$PROJECT_DIR$/src/ex1/MaxSubarray.java" />
-        <option value="$PROJECT_DIR$/src/ex2/Main.java" />
-        <option value="$PROJECT_DIR$/src/ex2/AssemblyLineScheduling.java" />
       </list>
     </option>
   </component>
@@ -159,7 +197,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MaxValueOfArray">
     <configuration name="AssemblyLineScheduling" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ex2.AssemblyLineScheduling" />
       <module name="algorthm-experiment" />
@@ -227,11 +265,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AssemblyLineScheduling" />
-        <item itemvalue="Application.MaxSubarray" />
-        <item itemvalue="Application.MergeAndQuick" />
         <item itemvalue="Application.MaxValueOfArray" />
         <item itemvalue="Application.BuildMaxHeap" />
+        <item itemvalue="Application.MergeAndQuick" />
+        <item itemvalue="Application.AssemblyLineScheduling" />
+        <item itemvalue="Application.MaxSubarray" />
       </list>
     </recent_temporary>
   </component>
@@ -252,18 +290,17 @@
       <workItem from="1574339008308" duration="1142000" />
       <workItem from="1574663673775" duration="3586000" />
       <workItem from="1576492259487" duration="5447000" />
-      <workItem from="1576934326290" duration="3211000" />
+      <workItem from="1576934326290" duration="14038000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20968000" />
+    <option name="totallyTimeSpent" value="31795000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -272,8 +309,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32861805" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32861805" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934713" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -311,41 +348,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ex1/MaxValueOfArray.java">
+    <entry file="file://$PROJECT_DIR$/src/ex2/MultistageGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="84" selection-start-line="20" selection-start-column="84" selection-end-line="20" selection-end-column="84" />
+        <state relative-caret-position="1334">
+          <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+          <folding>
+            <element signature="e#1993#1994#0" expanded="true" />
+            <element signature="e#2021#2022#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ex1/BuildMaxHeap.java">
+    <entry file="file://$PROJECT_DIR$/src/ex2/MatrixChain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="943">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ex1/MergeAndQuick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1472">
-          <caret line="65" column="37" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="37" />
+        <state relative-caret-position="299">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ex1/MaxSubarray.java">
+    <entry file="file://$PROJECT_DIR$/src/ex2/AssemblyLineScheduling.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="83" column="122" selection-start-line="83" selection-start-column="71" selection-end-line="83" selection-end-column="122" />
+        <state relative-caret-position="220">
+          <caret line="65" column="13" lean-forward="true" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ex2/AssemblyLineScheduling.java">
+    <entry file="file://$PROJECT_DIR$/src/ex1/MaxSubarray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        <state relative-caret-position="404">
+          <caret line="88" column="53" selection-start-line="88" selection-start-column="53" selection-end-line="88" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ex1/MergeAndQuick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="88" column="45" lean-forward="true" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ex1/BuildMaxHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="46" column="51" lean-forward="true" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ex1/MaxValueOfArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
         </state>
       </provider>
     </entry>

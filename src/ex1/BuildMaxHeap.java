@@ -43,12 +43,12 @@ public class BuildMaxHeap {
     public static void main(String[] args) {
         int[] array = { 4, 8, 5, 6, 12, 4, 3, 11, 1, 10, -10, -8, -3 };
 
-        System.out.println("Before heap:");
+        System.out.println("分治法建大顶堆前，数组为");
         System.out.println(Arrays.toString(array));
 
         buildMaxHeap(array, 0);
 
-        System.out.println("After heap sort:");
+        System.out.println("分治法建大顶堆后，数组为");
         System.out.println(Arrays.toString(array));
     }
 }

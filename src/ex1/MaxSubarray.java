@@ -81,12 +81,12 @@ public class MaxSubarray {
         startTime = System.currentTimeMillis();
         int max_1 = maxSumSubarray(a, 0, a.length-1);
         endTime = System.currentTimeMillis();
-        System.out.println("Divide and conquer: max sum is " + max_1 + ", and run time is " + (endTime-startTime) + " ms.");
+        System.out.println("分治法：最大子数组和为 " + max_1 + "，运行时间为 " + (endTime-startTime) + " ms.");
 
         startTime = System.currentTimeMillis();
         int max_2 = maxSubarrayBruteForce(a);
         endTime = System.currentTimeMillis();
-        System.out.println("Brute force: max sum is " + max_2 + ", and run time is " + (endTime-startTime) + " ms.");
+        System.out.println("暴力法：最大子数组和为 " + max_2 + "，运行时间为 " + (endTime-startTime) + " ms.");
     }
 }
 

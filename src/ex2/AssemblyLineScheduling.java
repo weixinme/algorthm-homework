@@ -1,30 +1,43 @@
 package ex2;
 
 public class AssemblyLineScheduling {
+    private int[][] a = new int[][]{ {7,9,3,4,8,4}, {8,5,6,4,5,7} };  //装配时间
+    private int[][] t = new int[][]{ {2,3,1,3,4},{2,1,2,2,1} };  //跨越时间
+    private int[] e = new int[]{ 2,4 };  //进入时间
+    private int[] x = new int[]{ 3,2 };  //离开时间
+    private int[][] l = new int[2][6];  //经过的站
+    private int[][] f = new int[2][6];  //到j的时间
+
+    private int start, end;
+    private int minLTRT;  //左上到右上的最短距离
+    private int minLTRB;  //左上到右下的最短距离
+    private int minLBRT;  //左下到右上的最短距离
+    private int minLBRB;  //左下到右下的最短距离
+    private int MAX_TIME = 99999;
+
     public static void main(String[] args) {
-        int[][] a = new int[][]{ {7,9,3,4,8,4}, {8,5,6,4,5,7} };  //装配时间
-        int[][] t = new int[][]{ {2,3,1,3,4},{2,1,2,2,1} };  //跨越时间
-        int[] e = new int[]{ 2,4 };  //进入时间
-        int[] x = new int[]{ 3,2 };  //离开时间
-        int[][] l = new int[2][6];  //经过的站
-        int[][] f = new int[2][6];  //到j的时间
-
         long startTime, endTime;
+        AssemblyLineScheduling als = new AssemblyLineScheduling();
 
         startTime = System.currentTimeMillis();
-        int best = fastestWay(a,f,t,e,x,l);
+        als.fastestWay();
         endTime = System.currentTimeMillis();
-        System.out.println("Dynamic Programming: total minimum time is " + best + ", and run time is " + (endTime-startTime) + " ms.");
+        System.out.println("，运行时间为 " + (endTime-startTime) + " ms.");
 
         startTime = System.currentTimeMillis();
-        MinTimeContainer container = new MinTimeContainer();
-        container.fastestWayDC();
+        als.fastestWayDC();
         endTime = System.currentTimeMillis();
-        System.out.println(", and run time is " + (endTime-startTime) + " ms.");
+        System.out.println("，运行时间为 " + (endTime-startTime) + " ms.");
+
 
     }
 
-    private static int fastestWay(int[][] a, int[][] f, int[][] t, int[] e, int[] x, int[][] l) {
+    private AssemblyLineScheduling(){
+        start = end = -1;
+        minLTRT = minLTRB = minLBRT = minLBRB = MAX_TIME;
+    }
+
+    private void fastestWay() {
         int bestf, bestLine;
         f[0][0] = e[0] + a[0][0];
         f[1][0] = e[1]+a[1][0];
@@ -55,31 +68,26 @@ public class AssemblyLineScheduling {
             bestLine = 2;
         }
 
+        //输出最优路线
+//        System.out.println("line:"+bestLine+" "+"station"+a[0].length);
         int temp = bestLine;
         for(int j=a[0].length-1;j>0;j--) {
         temp = l[temp-1][j];
-
+//        System.out.println("line:" + temp + " " + "station" + j);
         }
 
-        return bestf;
+        System.out.print("动态规划: 最短时间为 " + bestf);
     }
-    
-}
 
+    private void fastestWayDC()
+    {
+        AssemblyLineScheduling ret = ALS_DC(0, 5);
 
-class MinTimeContainer {
-    private int[][] a = new int[][]{ {7,9,3,4,8,4}, {8,5,6,4,5,7} };  //装配时间
-    private int[][] t = new int[][]{ {2,3,1,3,4},{2,1,2,2,1} };  //跨越时间
-    private int[] e = new int[]{ 2,4 };  //进入时间
-    private int[] x = new int[]{ 3,2 };  //离开时间
+        int totalMin = minOf4(e[0] + ret.minLTRT + x[0], e[0] + ret.minLTRB + x[1],
+                e[1] + ret.minLBRT + x[0], e[1] + ret.minLBRB + x[1]);
 
-    private int start, end;
-    private int minLTRT;  //mininmum time from left-top(S<1,start>) to right-top(S<1,end>)
-    private int minLTRB;  //mininmum time from left-top(S<1,start>) to right-bottom(S<2,end>)
-    private int minLBRT;  //mininmum time from left-bottom(S<2,start>) to right-top(S<1,end>)
-    private int minLBRB;  //mininmum time from left-bottom(S<2,start>) to right-bottom(S<2,end>)
-
-    private int MAX_TIME = 99999;
+        System.out.print("分治法：最短时间为 " + totalMin);
+    }
 
     private int minOf4(int i1, int i2, int i3, int i4) {
         int ret = MAX_TIME;
@@ -92,13 +100,8 @@ class MinTimeContainer {
         return ret;
     }
 
-    MinTimeContainer() {
-        start = end = -1;
-        minLTRT = minLTRB = minLBRT = minLBRB = MAX_TIME;
-    }
-
-    private MinTimeContainer MergeWithRight(MinTimeContainer right, int mid){
-        MinTimeContainer ret = new MinTimeContainer();
+    private AssemblyLineScheduling MergeWithRight(AssemblyLineScheduling right, int mid){
+        AssemblyLineScheduling ret = new AssemblyLineScheduling();
         ret.minLTRT = minOf4(minLTRT + right.minLTRT, minLTRT + t[0][mid] + right.minLBRT,
                 minLTRB + t[1][mid] + right.minLTRT, minLTRB + right.minLBRT);
         ret.minLTRB = minOf4(minLTRT + right.minLTRB, minLTRT + t[0][mid] + right.minLBRB,
@@ -113,9 +116,9 @@ class MinTimeContainer {
         return ret;
     }
 
-    private MinTimeContainer ALS_DC(int start, int end)
+    private AssemblyLineScheduling ALS_DC(int start, int end)
     {
-        MinTimeContainer ret = new MinTimeContainer();
+        AssemblyLineScheduling ret = new AssemblyLineScheduling();
         if (start == end) {
             ret.start = ret.end = start;
             ret.minLTRT = a[0][start];
@@ -127,21 +130,11 @@ class MinTimeContainer {
         }
         int mid = (start + end) / 2;
 
-        MinTimeContainer left = ALS_DC(start, mid);
-        MinTimeContainer right = ALS_DC(mid + 1, end);
+        AssemblyLineScheduling left = ALS_DC(start, mid);
+        AssemblyLineScheduling right = ALS_DC(mid + 1, end);
         ret = left.MergeWithRight(right, mid);
 
         return ret;
     }
-
-    void fastestWayDC()
-    {
-        MinTimeContainer ret = ALS_DC(0, 5);
-
-        int totalMin = minOf4(e[0] + ret.minLTRT + x[0], e[0] + ret.minLTRB + x[1],
-                e[1] + ret.minLBRT + x[0], e[1] + ret.minLBRB + x[1]);
-
-        System.out.print("Divide and Conquer: total minimum time is " + totalMin);
-    }
-
 }
+
